@@ -1,0 +1,10 @@
+Starting training at Tue Apr  9 14:02:14 2019
+
+Checkpoint for average score 0.10 after -99 episodes!
+Checkpoint for average score 0.20 after 510 episodes!
+Checkpoint for average score 0.31 after 703 episodes!
+Checkpoint for average score 0.40 after 775 episodes!
+Checkpoint for average score 0.50 after 836 episodes!
+
+
+Completed training at Tue Apr  9 15:03:17 2019
