@@ -1,8 +1,8 @@
 # Deep Reinforcement Learning Nanodegree Projects
 
-These are my projects from [Udacity's](https://www.udacity.com) [Deep Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893)
+These are my projects from [Udacity's](https://www.udacity.com) [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893)
 
-[Here](https://github.com/udacity/deep-reinforcement-learning) is Udacity's repo for this nanodegree and these projects.
+[Here](https://github.com/udacity/deep-reinforcement-learning) is Udacity's repository for this nanodegree and these projects.
 
 #### Downloading project files
 
