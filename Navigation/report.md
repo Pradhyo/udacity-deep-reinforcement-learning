@@ -54,7 +54,7 @@ Below is a plot of the rewards over episodes.
 
 ## Ideas for future work
 
-1. Use Experienced Replay
+1. Use Prioritized Experienced Replay
 2. Dueling Deep Q Networks
 3. Fine tune more parameters
 4. Learn from pixels
