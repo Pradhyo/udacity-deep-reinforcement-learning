@@ -16,7 +16,7 @@ This file contains the agent that has an actor and a critic, both using a Q-Netw
 
 Learning from random samples, determined by BATCH_SIZE, from the experiences stored, determined by BUFFER_SIZE, helps avoid experience correlations while still learning from rare experiences.
 
-GAMMA, the discount factor is set to 0.99 to let the agent prioritize long term rewards more than short term rewards. The agent learns 10 times for every 20 steps of interactions with the environment while collecting experiences at each step. LR, the learning rate determines the rate at which the agent learns.
+GAMMA, the discount factor is set to 0.99 to let the agent prioritize long term rewards more than short term rewards. The agent learns 10 times for every 20 steps of interactions with the environment while collecting experiences at each step. The learning rates determine the rate at which the actor and critic of the agent learn.
 
 As mentioned in the Benchmark Implementation section of the project, gradient clipping helped with the stability of the agent by clipping the norm of the gradients at 1 - `torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), 1)`
 
