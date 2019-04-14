@@ -69,7 +69,7 @@ Follow the instructions in `Continuous_Control.ipynb` to get started with traini
 
 - [Continuous_Control.ipynb](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/Continuous_Control.ipynb): Notebook where the agent is trained
 - [model.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/model.py): Actor and Critic classes
-- [ddpg_agent.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/dqn_agent.py): Agent class than learns from the environment
+- [ddpg_agent.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/ddpg_agent.py): Agent class than learns from the environment
 - [checkpoint_actor.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/checkpoint_actor.pth): Saved model weights of successful agent's actor
 - [checkpoint_critic.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/checkpoint_critic.pth): Saved model weights of successful agent's critic
 - [report.md](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Continuous_Control/report.md): Project report
