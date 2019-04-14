@@ -48,8 +48,8 @@ Follow the instructions in `Tennis.ipynb` to get started with training your own 
 - [model.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/model.py): Actor and Critic classes
 - [ddpg_agent.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/ddpg_agent.py): Agent class than learns from the environment
 - [multi_agent.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/multi_agent.py): Multi agent Class containing multiple ddpg agents that learns from the environment
-- [checkpoint_actor0.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_actor0.pth): Saved model weights of successful agent0's actor
-- [checkpoint_actor1.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_actor1.pth): Saved model weights of successful agent1's actor
-- [checkpoint_critic0.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_critic0.pth): Saved model weights of successful agent0's critic
-- [checkpoint_critic1.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_critic1.pth): Saved model weights of successful agent1's critic
+- [checkpoint_actor_0.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_actor_0.pth): Saved model weights of successful agent0's actor
+- [checkpoint_actor_1.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_actor_1.pth): Saved model weights of successful agent1's actor
+- [checkpoint_critic__0.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_critic_0.pth): Saved model weights of successful agent0's critic
+- [checkpoint_critic_1.pth](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/checkpoint_critic_1.pth): Saved model weights of successful agent1's critic
 - [report.md](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Tennis/report.md): Project report
