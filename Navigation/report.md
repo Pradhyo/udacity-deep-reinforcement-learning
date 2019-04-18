@@ -4,7 +4,14 @@ In this project, an agent is trained using Reinforcement Learning to navigate an
 
 ## Learning Algorithm
 
-The Deep Q-Network algorithm is implemented using the following files:
+The Deep Q-Network algorithm used in this project builds on Q-learning, where an agent learn an action-value function based on its interactions with an environment. For a given state the agent is in, the agent performs an action resulting in a new state and a corresponding reward for that action. Using all of this information, the agent updates its action-value function to eventually learn a policy that lets it maximize rewards over a long time. 
+
+Q-learning is a type of Temporal-Difference method where the agent learns continuously without waiting for a final outcome and thus suitable for the continuous task at hand here. Since the states are also continuous in this project, neural networks are used as function approximators and hence the name *Deep* Q-Network. This however causes a lot of instability and these have been addressed using the below techniques.
+
+1. **Experience Replay** - experiences (state, action, reward, new state) are stored in a buffer while interacting with the environment. Instead of learning from each of these in sequence, random samples from these experiences are used for learning. This breaks correlation as experiences next to each other are usually highly correlated. Another advantage is that the agent learns from rare experiences multiple times.
+2. **Fixed Q-Targets** - the weights are updated during the learning process but this affects both the target and the Q value causing instability. To avoid updating a guess with a guess, we teach two similar networks. One of these will be fixed (target) while the local network learns and then updates the target network periodically so the agent controlled by the local network is more stable. 
+
+The implementation of the algorithm described above is in the following files:
 
 ### [model.py](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Navigation/model.py)
 This file contains the class for a Q-Network - which is used to implement the agent using a local and target network as described in the paper mentioned above.
@@ -37,15 +44,15 @@ UPDATE_EVERY = 4        # how often to update the network
 The agent achieved an average score of 15 (over 100 episodes) in 605 episodes. An average score of 13 was reached before 500 episodes itself as can be seen [here](https://github.com/Pradhyo/udacity-deep-reinforcement-learning/blob/master/Navigation/Navigation.ipynb).
 
 ```
-Episode 100	Average Score: 0.96
-Episode 200	Average Score: 4.45
-Episode 300	Average Score: 8.49
-Episode 400	Average Score: 11.12
-Episode 500	Average Score: 12.31
-Episode 600	Average Score: 13.72
-Episode 700	Average Score: 14.84
-Episode 705	Average Score: 15.00
-Environment solved in 605 episodes!	Average Score: 15.00
+Episode 100 Average Score: 0.96
+Episode 200 Average Score: 4.45
+Episode 300 Average Score: 8.49
+Episode 400 Average Score: 11.12
+Episode 500 Average Score: 12.31
+Episode 600 Average Score: 13.72
+Episode 700 Average Score: 14.84
+Episode 705 Average Score: 15.00
+Environment solved in 605 episodes! Average Score: 15.00
 ```
 
 Below is a plot of the rewards over episodes.
